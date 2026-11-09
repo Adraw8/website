@@ -1,44 +1,322 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>DrawTech Media</title>
-<style>
-body {
-text-align: center;
-background-color: #faf2e4;
-margin: 0 10%%;
-font-family: sans-serif;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DrawTech Media | Drone Photography &amp; Mapping, Cumberland Valley PA</title>
+<meta name="description" content="FAA Part 107 certified drone pilot in Pennsylvania's Cumberland Valley. Aerial real estate photos, 3D mapping, roof inspections and event coverage.">
+<link rel="canonical" href="https://drawtechmedia.com/">
+<meta name="theme-color" content="#0f1c2a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DrawTech Media">
+<meta property="og:title" content="DrawTech Media | Drone Photography &amp; Mapping">
+<meta property="og:description" content="Aerial photography, 3D mapping, roof inspections and event coverage from an FAA Part 107 certified pilot in the Cumberland Valley, PA.">
+<meta property="og:url" content="https://drawtechmedia.com/">
+<meta property="og:image" content="https://drawtechmedia.com/ajdrawbaughphoto.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://drawtechmedia.com/#business",
+      "name": "DrawTech Media",
+      "slogan": "We'll handle the cooking.",
+      "description": "Drone services business offering aerial photography, 3D mapping, roof inspections, construction progress updates and event coverage for real estate, construction and local businesses.",
+      "url": "https://drawtechmedia.com/",
+      "image": "https://drawtechmedia.com/ajdrawbaughphoto.png",
+      "email": "ajdrawbaugh@gmail.com",
+      "telephone": "+1-717-756-7782",
+      "foundingDate": "2024",
+      "areaServed": { "@type": "Place", "name": "Cumberland Valley, Pennsylvania" },
+      "founder": { "@id": "https://drawtechmedia.com/#aj" },
+      "knowsAbout": ["Drone photography", "Aerial videography", "3D mapping", "Photogrammetry", "Roof inspection", "Real estate photography"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Drone services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aerial real estate photography" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aerial business media" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aerial event coverage" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "3D mapping" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drone roof inspections" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction site progress updates" } }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://drawtechmedia.com/#aj",
+      "name": "AJ Drawbaugh",
+      "jobTitle": "Owner and FAA Part 107 certified drone pilot",
+      "worksFor": { "@id": "https://drawtechmedia.com/#business" },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "FAA Part 107 Remote Pilot Certificate (Small UAS)",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "GovernmentOrganization", "name": "Federal Aviation Administration" }
+      },
+      "image": "https://drawtechmedia.com/ajdrawbaughphoto.png"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is DrawTech Media licensed to fly commercially?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. AJ Drawbaugh holds an FAA Part 107 Remote Pilot Certificate for small unmanned aircraft systems (sUAS), earned in July 2025, which is the certification the FAA requires for commercial drone work." } },
+        { "@type": "Question", "name": "Who flies the drone and edits the footage?",
+          "acceptedAnswer": { "@type": "Answer", "text": "AJ does. Every DrawTech Media project is personally flown and edited by AJ Drawbaugh, from planning the flight to delivering the final files." } },
+        { "@type": "Question", "name": "What does a drone shoot cost?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Pricing depends on the type of project, the size of the site and what you need delivered. Send the project details by email, text or the contact form and AJ will reply with a quote." } },
+        { "@type": "Question", "name": "Where does DrawTech Media fly?",
+          "acceptedAnswer": { "@type": "Answer", "text": "DrawTech Media is based in Pennsylvania's Cumberland Valley. If your project is outside the area, reach out and ask." } },
+        { "@type": "Question", "name": "What happens if the weather is bad on shoot day?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Drone flights only happen when conditions are safe and legal to fly. If wind, rain or visibility rule out a flight, the shoot is rescheduled." } }
+      ]
+    }
+  ]
 }
-h1 {
-text-align: center;
-font-family: sans-serif;
-font-weight: normal;
-text-transform: uppercase;
-border-bottom: 1px solid #57b1dc;
-margin-top: 30px;
-}
-h2 {
-color: #d1633c;
-font-size: 1em;
-}
-</style>
+</script>
 </head>
-
 <body>
-<a href="services.html">Services Provided...</a>
+<a class="skip" href="#main">Skip to content</a>
 
-<a href="contact.html">Contact Page...</a>
-<h1><img src="ajdrawbaughphoto.png" alt="logo"><br>AJ Drawbaugh</h1>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html" aria-label="DrawTech Media home">
+      <svg aria-hidden="true"><use href="icons.svg#i-logo"/></svg>
+      <span>DrawTech<b>Media</b></span>
+    </a>
+    <ul>
+      <li><a class="link" href="services.html">Services</a></li>
+      <li><a class="link hide-sm" href="index.html#about">About</a></li>
+      <li><a class="link hide-sm" href="index.html#faq">FAQ</a></li>
+      <li><a class="btn btn-primary btn-sm" href="contact.html">Get a quote</a></li>
+    </ul>
+  </nav>
+</header>
 
-<h2>Description</h2>
-<p>The owner of a drone services business since early 2024, my focus is on professional drone photography and piloting. With the Small UAS (sUAS) certification obtained in July 2025, I provide tailored aerial content for diverse needs, including construction and real estate.  
+<main id="main">
+  <section class="hero" style="padding:0">
+    <svg class="bg" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M40 0H0V40" fill="none" stroke="#57b1dc" stroke-opacity=".12" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="1200" height="640" fill="url(#grid)"/>
+      <g fill="none" stroke="#57b1dc" stroke-opacity=".28" stroke-width="1.2">
+        <path d="M640 520c80-120 260-150 360-90s160 10 230-70"/>
+        <path d="M600 600c90-150 300-200 420-120s170 20 240-80"/>
+        <path d="M700 460c60-90 200-110 280-60s130 0 190-60"/>
+        <path d="M760 400c40-60 140-70 200-40s100-10 140-50"/>
+        <path d="M820 345c30-35 90-40 130-20s70-10 100-35"/>
+      </g>
+      <path d="M520 560C640 420 760 380 880 260S1080 120 1180 80" fill="none" stroke="#d1633c" stroke-width="2" stroke-dasharray="6 8" stroke-opacity=".8"/>
+      <circle cx="880" cy="260" r="6" fill="#d1633c"/>
+      <circle cx="880" cy="260" r="16" fill="none" stroke="#d1633c" stroke-opacity=".5"/>
+      <circle cx="1180" cy="80" r="5" fill="#57b1dc"/>
+    </svg>
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="eyebrow">FAA Part 107 certified drone pilot</span>
+        <h1>See your property from <em>a better angle.</em></h1>
+        <p class="lede">DrawTech Media captures aerial photography, 3D maps, roof inspections and event coverage for real estate, construction and local businesses in Pennsylvania's Cumberland Valley. One certified pilot flies and edits every project, start to finish.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact.html">Get a quote</a>
+          <a class="btn btn-ghost" href="services.html">See services</a>
+        </div>
+        <ul class="trust">
+          <li><svg aria-hidden="true"><use href="icons.svg#i-shield"/></svg>FAA Part 107 certified</li>
+          <li><svg aria-hidden="true"><use href="icons.svg#i-user"/></svg>Flown &amp; edited by the owner</li>
+          <li><svg aria-hidden="true"><use href="icons.svg#i-clock"/></svg>Fast turnaround</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-While pursuing my high school education at Cumberland Valley High School, I am dedicated to growing my expertise in drone operations. Combining my entrepreneurial experience with technical skills, I aim to contribute to advancements in drone technology and its applications.</p>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">What I fly</span>
+        <h2>Drone services for real estate, construction and local business</h2>
+        <p>Pick what you need. Every job comes back as edited, ready-to-use media or data, not raw footage you have to sort through.</p>
+      </div>
+      <div class="grid grid-3">
+        <a class="card" href="services.html#real-estate">
+          <div class="icon"><svg aria-hidden="true"><use href="icons.svg#i-home"/></svg></div>
+          <h3>Real estate photography</h3>
+          <p>Aerial photos and video that show the whole property, the lot lines and the neighborhood, so listings stand out.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+        <a class="card" href="services.html#mapping">
+          <div class="icon"><svg aria-hidden="true"><use href="icons.svg#i-cube"/></svg></div>
+          <h3>3D mapping</h3>
+          <p>Accurate maps and 3D models of sites and buildings, built from overlapping aerial imagery.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+        <a class="card" href="services.html#roof">
+          <div class="icon ember"><svg aria-hidden="true"><use href="icons.svg#i-roof"/></svg></div>
+          <h3>Roof inspections</h3>
+          <p>Close-up roof imagery without a ladder, so you can see condition and damage from the ground.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+        <a class="card" href="services.html#construction">
+          <div class="icon ember"><svg aria-hidden="true"><use href="icons.svg#i-crane"/></svg></div>
+          <h3>Construction progress</h3>
+          <p>Repeatable aerial views of your job site that keep owners, clients and crews on the same page.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+        <a class="card" href="services.html#business">
+          <div class="icon"><svg aria-hidden="true"><use href="icons.svg#i-briefcase"/></svg></div>
+          <h3>Aerial business media</h3>
+          <p>Cinematic aerial shots of your storefront, facility or campus for your website, ads and social media.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+        <a class="card" href="services.html#events">
+          <div class="icon"><svg aria-hidden="true"><use href="icons.svg#i-event"/></svg></div>
+          <h3>Event coverage</h3>
+          <p>Overhead views of the crowd, the venue and the moments that only make sense from the air.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<h2>DrawTech Media</h2>
-<p><em>We'll handle the cooking.</em> I’m AJ Drawbaugh, a FAA Part 107 certified drone pilot and passionate high school entrepreneur behind DrawTech Media. I specialize in aerial photography, 3D mapping, roof inspections, and event coverage for real estate, construction, and local businesses.
+  <section class="dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Why DrawTech</span>
+        <h2>We'll handle the cooking.</h2>
+        <p>You tell me what you need to see. I handle the airspace, the flight and the editing, and you get files you can use right away.</p>
+      </div>
+      <div class="values">
+        <div class="value">
+          <h3><svg aria-hidden="true"><use href="icons.svg#i-shield"/></svg>Certified and by the book</h3>
+          <p>FAA Part 107 Remote Pilot Certificate (sUAS), earned July 2025. Commercial flights are planned and flown within FAA rules.</p>
+        </div>
+        <div class="value">
+          <h3><svg aria-hidden="true"><use href="icons.svg#i-user"/></svg>One pilot, start to finish</h3>
+          <p>The person you talk to is the person who flies and edits your project. Nothing gets lost in a handoff.</p>
+        </div>
+        <div class="value">
+          <h3><svg aria-hidden="true"><use href="icons.svg#i-clock"/></svg>Accurate and fast</h3>
+          <p>Accurate data, cinematic visuals and fast turnaround, so your listing, report or post goes out on time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-Every project is personally operated and edited by me — ensuring accurate data, cinematic visuals, and fast turnaround every time. Whether you need marketing content, property inspections, or site progress updates, DrawTech Media delivers high-quality drone media that helps you work smarter and stand out.</p>
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">How it works</span>
+        <h2>From first message to finished files</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Tell me about the project</h3><p>Email, text or use the form. Share the address, what you need and when.</p></li>
+        <li><h3>Get a quote and a plan</h3><p>I check the location and airspace, then confirm the price and shoot date.</p></li>
+        <li><h3>Flight day</h3><p>I fly the site when conditions are safe, capturing every angle on the list.</p></li>
+        <li><h3>Edited delivery</h3><p>You get edited photos, video or map data, ready to post, share or present.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="alt" id="about">
+    <div class="wrap about">
+      <img src="ajdrawbaughphoto.png" alt="AJ Drawbaugh, owner and drone pilot at DrawTech Media" width="464" height="412" loading="lazy">
+      <div>
+        <span class="kicker">Meet your pilot</span>
+        <h2>Hi, I'm AJ Drawbaugh.</h2>
+        <p>I've run DrawTech Media since early 2024, focused on professional drone photography and piloting. In July 2025 I earned my FAA Part 107 small UAS certification, and I now provide tailored aerial content for real estate, construction and local businesses.</p>
+        <p>I'm also a student at Cumberland Valley High School, building my experience in drone operations alongside my education. Every project is personally operated and edited by me, so you get accurate data, cinematic visuals and a fast turnaround.</p>
+        <ul class="facts">
+          <li><svg aria-hidden="true"><use href="icons.svg#i-check"/></svg>Running a drone services business since early 2024</li>
+          <li><svg aria-hidden="true"><use href="icons.svg#i-check"/></svg>FAA Part 107 certified since July 2025</li>
+          <li><svg aria-hidden="true"><use href="icons.svg#i-check"/></svg>Based in the Cumberland Valley, Pennsylvania</li>
+        </ul>
+        <blockquote>"We'll handle the cooking."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Is DrawTech Media licensed to fly commercially?</summary>
+          <p>Yes. AJ Drawbaugh holds an FAA Part 107 Remote Pilot Certificate for small unmanned aircraft systems (sUAS), earned in July 2025. That's the certification the FAA requires for commercial drone work.</p>
+        </details>
+        <details>
+          <summary>Who flies the drone and edits the footage?</summary>
+          <p>I do. Every project is personally flown and edited by me, from planning the flight to delivering the final files.</p>
+        </details>
+        <details>
+          <summary>What does a drone shoot cost?</summary>
+          <p>It depends on the type of project, the size of the site and what you need delivered. <a href="contact.html">Send me the details</a> and I'll reply with a quote.</p>
+        </details>
+        <details>
+          <summary>Where do you fly?</summary>
+          <p>DrawTech Media is based in Pennsylvania's Cumberland Valley. If your project is outside the area, reach out and ask.</p>
+        </details>
+        <details>
+          <summary>What if the weather is bad on shoot day?</summary>
+          <p>I only fly when conditions are safe and legal. If wind, rain or visibility rule out a flight, we reschedule.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <div>
+        <h2>Have a property or project in mind?</h2>
+        <p>Tell me what you need to see and I'll send a quote.</p>
+      </div>
+      <a class="btn btn-dark" href="contact.html">Get a quote</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><svg aria-hidden="true"><use href="icons.svg#i-logo"/></svg><span>DrawTech<b>Media</b></span></a>
+        <p>Aerial photography, 3D mapping, roof inspections and event coverage by AJ Drawbaugh, FAA Part 107 certified drone pilot. Cumberland Valley, PA.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:ajdrawbaugh@gmail.com">ajdrawbaugh@gmail.com</a></li>
+          <li><a href="tel:+17177567782">(717) 756-7782</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; <span id="yr">2026</span> DrawTech Media</span>
+      <span>FAA Part 107 certified remote pilot</span>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
+</html>

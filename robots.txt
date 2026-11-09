@@ -1,0 +1,17 @@
+# DrawTech Media: search engines and AI assistants are welcome to read this site.
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://drawtechmedia.com/sitemap.xml
