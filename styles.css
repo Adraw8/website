@@ -19,13 +19,14 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { overflow-x: clip; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--cream);
   color: var(--ink);
   font: 400 1.0625rem/1.65 var(--font-body);
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 img, svg { max-width: 100%; display: block; }
 a { color: var(--sky-ink); text-underline-offset: 3px; }
@@ -216,4 +217,73 @@ textarea { min-height: 140px; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; animation: none !important; }
+}
+
+/* ---------- Photography ---------- */
+.brand img { width: 34px; height: 34px; }
+
+/* Media heroes (video or photo behind text) */
+.hero-media .hero-video, .hero-media .hero-photo {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.hero-media .hero-shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(15,28,42,.92) 0%, rgba(15,28,42,.72) 45%, rgba(15,28,42,.35) 100%),
+              linear-gradient(0deg, rgba(15,28,42,.6) 0%, rgba(15,28,42,0) 40%);
+}
+@media (max-width: 720px) {
+  .hero-media .hero-shade { background: rgba(15,28,42,.78); }
+}
+@media (prefers-reduced-motion: reduce) { .hero-video { display: none; } .hero-media { background: url(img/drone-house-poster.jpg) center/cover; } }
+
+/* Client logos */
+.clients { background: var(--navy-2); border-top: 1px solid rgba(255,255,255,.08); padding: 22px 0; }
+.clients .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 18px 44px; }
+.clients span { font: 600 .8rem var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: #9fb0c1; }
+.clients img { height: 34px; width: auto; }
+
+/* Photo cards */
+.card-photo { padding: 0; overflow: hidden; }
+.card-photo .card-img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .4s ease; }
+.card-photo:hover .card-img { transform: scale(1.04); }
+.card-photo .icon { margin: -24px 0 14px 28px; position: relative; background: #fffaf2; box-shadow: var(--shadow); }
+.card-photo .icon.ember { background: #fffaf2; }
+.card-photo h3, .card-photo p, .card-photo .more { margin-left: 28px; margin-right: 28px; }
+.card-photo .more { margin-bottom: 26px; }
+
+/* Services page photos */
+.service { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); align-items: start; }
+.service > .icon { display: none; }
+.service-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
+@media (max-width: 760px) { .service { grid-template-columns: 1fr; } }
+
+/* Gallery */
+.gallery { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; } }
+.shot { position: relative; display: block; overflow: hidden; border-radius: 10px; aspect-ratio: 1; background: var(--navy); }
+.shot img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease, opacity .2s; }
+.shot:hover img { transform: scale(1.06); opacity: .9; }
+.shot span {
+  position: absolute; left: 10px; bottom: 10px; padding: 3px 10px; border-radius: 999px;
+  background: rgba(15,28,42,.78); color: #fff; font: 600 .75rem var(--font-body);
+}
+.lightbox { border: 0; padding: 0; background: transparent; max-width: min(1200px, 94vw); max-height: 94vh; }
+.lightbox::backdrop { background: rgba(8,14,22,.9); }
+.lightbox img { max-width: 100%; max-height: 84vh; border-radius: 10px; margin: 0 auto; }
+.lightbox p { color: #d7e2ec; text-align: center; margin: 12px 0 0; }
+.lb-close { position: fixed; top: 14px; right: 18px; background: none; border: 0; color: #fff; font-size: 2.4rem; line-height: 1; cursor: pointer; }
+
+/* About photos */
+.about-photos { position: relative; padding: 0 0 48px 0; }
+.about-photos .about-main { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); border: 0; }
+.about-photos .about-inset {
+  position: absolute; right: -24px; bottom: 0; width: 58%; aspect-ratio: 3 / 2; object-fit: cover;
+  border-radius: 12px; border: 6px solid var(--cream); box-shadow: var(--shadow);
+}
+.about img { border-radius: var(--radius); }
+@media (max-width: 760px) {
+  .about-photos { max-width: 360px; }
+  .about-photos .about-inset { right: 0; }
+  .about img { max-width: none; }
 }

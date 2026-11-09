@@ -6,9 +6,10 @@
 <meta name="theme-color" content="#0f1c2a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DrawTech Media">
-<meta property="og:image" content="https://drawtechmedia.com/ajdrawbaughphoto.png">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:image" content="https://drawtechmedia.com/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
 <header class="site-header">
   <nav class="wrap nav" aria-label="Main">
     <a class="brand" href="index.html" aria-label="DrawTech Media home">
-      <svg aria-hidden="true"><use href="icons.svg#i-logo"/></svg>
+      <img src="img/logo-dt-white.png" alt="" width="34" height="34">
       <span>DrawTech<b>Media</b></span>
     </a>
     <ul>
@@ -39,13 +40,9 @@
 </header>
 
 <main id="main">
-  <section class="hero page-hero" style="padding:0">
-    <svg class="bg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#57b1dc" stroke-opacity=".12"/></pattern></defs>
-      <rect width="1200" height="400" fill="url(#grid)"/>
-      <path d="M600 380C720 280 840 240 960 160S1100 60 1200 40" fill="none" stroke="#d1633c" stroke-width="2" stroke-dasharray="6 8" stroke-opacity=".8"/>
-      <circle cx="960" cy="160" r="6" fill="#d1633c"/>
-    </svg>
+  <section class="hero page-hero hero-media" style="padding:0">
+    <img class="hero-photo" src="img/house-aerial.jpg" alt="" aria-hidden="true">
+    <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap">
       <div class="hero-inner">
         <span class="eyebrow">Contact</span>
@@ -119,7 +116,7 @@ document.getElementById('quote').addEventListener('submit', function (e) {
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="index.html"><svg aria-hidden="true"><use href="icons.svg#i-logo"/></svg><span>DrawTech<b>Media</b></span></a>
+        <a class="brand" href="index.html"><img src="img/logo-dt-white.png" alt="" width="34" height="34"><span>DrawTech<b>Media</b></span></a>
         <p>Aerial photography, 3D mapping, roof inspections and event coverage by AJ Drawbaugh, FAA Part 107 certified drone pilot. Cumberland Valley, PA.</p>
       </div>
       <div>
